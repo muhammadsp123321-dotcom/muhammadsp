@@ -9,7 +9,11 @@ export default function HeroSection() {
     <section className="h-screen flex flex-col relative" style={{ overflowX: 'clip' }}>
       {/* Navbar */}
       <FadeIn delay={0} y={-20} as="nav">
+<<<<<<< HEAD
         <div className="flex flex-wrap justify-center md:justify-between gap-4 items-center px-4 md:px-10 pt-6 md:pt-8">
+=======
+        <div className="flex justify-between items-center px-6 md:px-10 pt-6 md:pt-8">
+>>>>>>> 093f53146b5669fde27091d1902d989eacdcb4a3
           {NAV_LINKS.map((link) => (
             <a
               key={link}
@@ -25,7 +29,11 @@ export default function HeroSection() {
       {/* Hero Heading */}
       <div className="overflow-hidden w-full mt-6 sm:mt-4 md:-mt-5">
         <FadeIn delay={0.15} y={40}>
+<<<<<<< HEAD
           <h1 className="hero-heading font-black uppercase tracking-tight leading-none w-full text-center md:text-left text-[3rem] sm:text-[4rem] md:text-[8rem] lg:text-[13vw]">
+=======
+          <h1 className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-[15vw] sm:text-[15vw] md:text-[15vw] lg:text-[13.8vw]">
+>>>>>>> 093f53146b5669fde27091d1902d989eacdcb4a3
             Muhammad Sp
           </h1>
         </FadeIn>
@@ -37,6 +45,7 @@ export default function HeroSection() {
         strength={3}
         activeTransition="transform 0.3s ease-out"
         inactiveTransition="transform 0.6s ease-in-out"
+<<<<<<< HEAD
        className="
          absolute
          left-1/2
@@ -48,6 +57,9 @@ export default function HeroSection() {
          md:w-[440px]
          lg:w-[520px]
         "
+=======
+        className="absolute left-1/2 -translate-x-1/2 z-10 top-1/2 -translate-y-1/2 sm:top-auto sm:translate-y-0 sm:bottom-0 w-[280px] sm:w-[360px] md:w-[440px] lg:w-[520px]"
+>>>>>>> 093f53146b5669fde27091d1902d989eacdcb4a3
       >
         <FadeIn delay={0.6} y={30}>
           <img

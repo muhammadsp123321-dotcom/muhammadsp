@@ -65,7 +65,11 @@ function ProjectCard({
   return (
     <div
       ref={cardRef}
+<<<<<<< HEAD
       className="sticky top-16 md:top-32 h-[75vh] md:h-[85vh]"
+=======
+      className="sticky top-24 md:top-32 h-[85vh]"
+>>>>>>> 093f53146b5669fde27091d1902d989eacdcb4a3
       style={{ top: `${index * 28 + 96}px` }}
     >
       <motion.div
@@ -73,8 +77,13 @@ function ProjectCard({
         className="h-full rounded-[60px] border-2 border-[#D7E2EA] p-8 flex flex-col gap-6"
       >
         {/* Header */}
+<<<<<<< HEAD
         <div className="flex flex-col md:flex-row gap-4 md:gap-0 items-start md:items-center justify-between">
           <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6">
+=======
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-6">
+>>>>>>> 093f53146b5669fde27091d1902d989eacdcb4a3
             <span
               className="font-black"
               style={{
@@ -118,7 +127,11 @@ function ProjectCard({
         </div>
 
         {/* Video */}
+<<<<<<< HEAD
         <div className="flex-1 overflow-hidden rounded-[25px] md:rounded-[45px]">
+=======
+        <div className="flex-1 overflow-hidden rounded-[45px]">
+>>>>>>> 093f53146b5669fde27091d1902d989eacdcb4a3
           <video
             className="w-full h-full object-contain bg-black"
             autoPlay
@@ -139,7 +152,11 @@ function ProjectCard({
 export default function ProjectsSection() {
   return (
     <section
+<<<<<<< HEAD
       className="rounded-t-[40px] md:rounded-t-[60px] -mt-14 relative z-10 px-4 md:px-10 py-20 md:py-32"
+=======
+      className="rounded-t-[60px] -mt-14 relative z-10 px-10 py-32"
+>>>>>>> 093f53146b5669fde27091d1902d989eacdcb4a3
       style={{ background: '#0C0C0C' }}
     >
       <FadeIn delay={0} y={40}>
