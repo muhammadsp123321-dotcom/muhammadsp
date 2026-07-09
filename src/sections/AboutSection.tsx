@@ -8,13 +8,13 @@ export default function AboutSection() {
       id="about"
       className="relative min-h-screen flex flex-col items-center justify-center px-5 sm:px-8 md:px-10 py-20"
     >
-      {/* Decorative corner images */}
+      {/* Left Top */}
       <FadeIn
         delay={0.1}
         x={-80}
         y={0}
         duration={0.9}
-        className="absolute top-[4%] left-[1%] sm:left-[2%] md:left-[4%] w-[120px] sm:w-[160px] md:w-[210px]"
+        className="absolute top-[4%] left-[1%] sm:left-[2%] md:left-[4%] w-[120px] sm:w-[180px] md:w-[280px]"
       >
         <img
           src="https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/moon_icon.11395d36.png"
@@ -23,12 +23,13 @@ export default function AboutSection() {
         />
       </FadeIn>
 
+      {/* Left Bottom */}
       <FadeIn
         delay={0.25}
         x={-80}
         y={0}
         duration={0.9}
-        className="absolute bottom-[8%] left-[3%] sm:left-[6%] md:left-[10%] w-[100px] sm:w-[140px] md:w-[180px]"
+        className="absolute bottom-[8%] left-[3%] sm:left-[6%] md:left-[10%] w-[100px] sm:w-[160px] md:w-[260px]"
       >
         <img
           src="https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/p59_1.4659672e.png"
@@ -37,12 +38,13 @@ export default function AboutSection() {
         />
       </FadeIn>
 
+      {/* Right Top */}
       <FadeIn
         delay={0.15}
         x={80}
         y={0}
         duration={0.9}
-        className="absolute top-[4%] right-[1%] sm:right-[2%] md:right-[4%] w-[120px] sm:w-[160px] md:w-[210px]"
+        className="absolute top-[4%] right-[1%] sm:right-[2%] md:right-[4%] w-[120px] sm:w-[180px] md:w-[280px]"
       >
         <img
           src="https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/lego_icon-1.703bb594.png"
@@ -51,12 +53,13 @@ export default function AboutSection() {
         />
       </FadeIn>
 
+      {/* Right Bottom */}
       <FadeIn
         delay={0.3}
         x={80}
         y={0}
         duration={0.9}
-        className="absolute bottom-[8%] right-[3%] sm:right-[6%] md:right-[10%] w-[130px] sm:w-[170px] md:w-[220px]"
+        className="absolute bottom-[8%] right-[3%] sm:right-[6%] md:right-[10%] w-[130px] sm:w-[190px] md:w-[300px]"
       >
         <img
           src="https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/Group_134-1.2e04f3ce.png"
@@ -69,19 +72,26 @@ export default function AboutSection() {
       <FadeIn delay={0} y={40}>
         <h2
           className="hero-heading font-black uppercase leading-none tracking-tight text-center"
-          style={{ fontSize: 'clamp(3rem, 12vw, 160px)' }}
+          style={{
+            fontSize: 'clamp(4rem, 14vw, 220px)',
+          }}
         >
-          About me
+          About Me
         </h2>
       </FadeIn>
 
-      <div className="flex flex-col items-center gap-10 sm:gap-14 md:gap-16 mt-10 sm:mt-14 md:mt-16">
-        <div className="flex flex-col items-center gap-16 sm:gap-20 md:gap-24">
-          <AnimatedText
-            text="I'm Muhammad sp, a Motion Graphics & Video Editor from India. I create cinematic edits, anime edits, gaming montages, and high-quality After Effects animations."
-            className="text-center leading-relaxed max-w-[560px] font-medium"
-            style={{ color: '#D7E2EA', fontSize: 'clamp(1rem, 2vw, 1.35rem)' }}
-          />
+      {/* Content */}
+      <div className="flex flex-col items-center gap-10 mt-12 md:mt-16">
+        <AnimatedText
+          text="I'm Muhammad Sp, a Motion Graphics & Video Editor from India. I create cinematic edits, anime edits, gaming montages, and high-quality After Effects animations."
+          className="text-center leading-[1.4] max-w-[1200px] font-medium px-4"
+          style={{
+            color: '#D7E2EA',
+            fontSize: 'clamp(1.5rem, 3vw, 3.2rem)',
+          }}
+        />
+
+        <div className="mt-6">
           <ContactButton />
         </div>
       </div>
